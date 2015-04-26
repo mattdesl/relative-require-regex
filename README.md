@@ -2,7 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-A regex to test whether a require string is a relative path.
+A regex to test whether a require string is a system path (relative or absolute). Module lookups like `"url"` will return false.
 
 ```js
 var relative = require('relative-require-regex')()
