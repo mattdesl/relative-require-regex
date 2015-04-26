@@ -1,0 +1,44 @@
+{
+  "name": "relative-require-regex",
+  "version": "1.0.0",
+  "description": "test whether a require string is relative",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "require",
+    "node",
+    "js",
+    "common",
+    "js",
+    "commonjs",
+    "nodejs",
+    "node.js",
+    "statement",
+    "requires",
+    "relative",
+    "path",
+    "absolute",
+    "module",
+    "package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/relative-require-regex.git"
+  },
+  "homepage": "https://github.com/mattdesl/relative-require-regex",
+  "bugs": {
+    "url": "https://github.com/mattdesl/relative-require-regex/issues"
+  }
+}

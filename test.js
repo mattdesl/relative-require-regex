@@ -1,0 +1,20 @@
+var relative = require('./')
+var test = require('tape')
+
+test('test whether a require string is relative', function(t) {
+  var reg = relative()
+  t.equal(reg.test('url'), false)
+  t.equal(reg.test('is-array'), false)
+  t.equal(reg.test('eases/linear'), false)
+  t.equal(reg.test('eases/linear.js'), false)
+
+  t.equal(reg.test('./eases/linear.js'), true)
+  t.equal(reg.test('./eases/linear'), true)
+  t.equal(reg.test('./eases'), true)
+  t.equal(reg.test('../eases'), true)
+  t.equal(reg.test('../eases/index.js'), true)
+  t.equal(reg.test('/home/index.js'), true)
+  t.equal(reg.test('//home/index.js'), true)
+  t.equal(reg.test('\\home\\index.js'), true)
+  t.end()
+})
